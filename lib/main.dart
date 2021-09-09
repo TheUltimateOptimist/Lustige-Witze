@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Map<String, String> allJokes = {};
 
   Future<void> getJoke(int index) async {
-    String joke = await getRandomJokeCategoryIndependent();
+    String joke = await getRandomJokeCategoryDependent();
     setState(() {
       allJokes.putIfAbsent(index.toString(), () => joke);
     });

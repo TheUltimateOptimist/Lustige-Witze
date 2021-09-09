@@ -74,7 +74,7 @@ Future<String> getRandomJokeCategoryDependent() async {
     int currentIndex = 0;
     bool nextIndex = true;
     while (nextIndex) {
-      number -= int.parse(witzeDaten[currentIndex][1]);
+      number -= int.parse(witzeDaten[currentIndex][1].toString());
       currentIndex += 1;
       if ((number < witzeDaten[currentIndex][1])) {
         nextIndex = false;
